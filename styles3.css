@@ -1,0 +1,296 @@
+@font-face {
+    font-family: 'MADE TOMMY Regular_PERSONAL USE';
+    src: url('Fontes/MADE TOMMY Regular_PERSONAL USE.otf') format('opentype');
+}
+    @font-face {
+    font-family: 'MADE TOMMY Bold_PERSONAL USE';
+    src: url('Fontes/MADE TOMMY Bold_PERSONAL USE.otf') format('opentype');
+    /* Adicione formatos de fonte adicionais conforme necessário (eot, woff, woff2, etc.) */
+}
+
+body, h1, h3, p, ul {
+    font-family: 'MADE TOMMY Regular_PERSONAL USE', sans-serif;
+}
+body, h2 {
+    font-family: 'MADE TOMMY Bold_PERSONAL USE', sans-serif;
+}
+
+body, h1, h2, h3, p, ul {
+    margin: 0;
+    padding: 0;
+}
+/* Adiciona uma linha verde por baixo de todos os títulos */
+h1, h2, h3 {
+    display: inline-block; /* Para que a borda envolva apenas o comprimento do texto */
+    border-bottom: 2.5px solid #006400;
+    padding-bottom: 5px; /* Ajusta o espaçamento entre o texto e a linha */
+    margin-bottom: 10px; /* Espaçamento opcional entre títulos */
+}
+
+header {
+    position: relative;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 15px 0;
+}
+
+body {
+    padding-top: 80px;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.logo img {
+    width: 125px;
+    height: auto;
+}
+
+.divider {
+    width: 100%;
+    height: 2.5px;
+    background-color: #006400;
+    margin: 10px 0;
+}
+
+.nav-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.nav-links ul li {
+    margin-right: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.3s ease-in-out;
+    font-size: 20px;
+}
+
+.nav-links a:hover {
+    border-bottom: 2px solid #006400;
+}
+
+
+.header-background {
+    background-image: url('imagens/sobrenos/fundoSobrenos.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    margin-top: 50px;
+}
+
+
+/* Your existing CSS code */
+
+/* Styles for the "Sobre Nós" section */
+.about-us-section {
+    padding: 40px 20px;
+    background-color: #fff;
+    color: #000;
+    text-align: center;
+}
+
+.about-us-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+#scrollToTopButton {
+            border: none;
+            background: none;
+            cursor: pointer;
+            font-family: 'MADE TOMMY Regular_PERSONAL USE', sans-serif; /* Adjust the font-family as needed */
+            font-size: 30px; /* Adjust the font size as needed */
+            color: #000; /* Adjust the text color as needed */
+        }
+/* Center the title and button in the "A Nossa História" section */
+.about-us-section #sobre-nos-section {
+    text-align: center;
+}
+
+.about-us-section #sobre-nos-section h4 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    margin-left: 10px; /* Adjust margin-left as needed */
+}
+
+.about-us-section #sobre-nos-section button {
+    font-size: 22px;
+    padding: 10px 20px;
+    margin-top: 0px;
+    margin-left: 20px; /* Adjust margin-left as needed */
+}
+.fullscreen-button {
+    position: absolute;
+    top: 1470px; /* Adjust this value to move the button up or down */
+    right: 200px; /* Adjust this value to move the button left or right */
+    z-index: 1000; /* Ensure it's above other elements */
+    background-color: transparent; /* Transparent background */
+    border: none; /* No border */
+    cursor: pointer; /* Show pointer cursor on hover */
+    color: # #000000; /* Text color */
+    font-size: 20px; /* Adjust font size as needed */
+}
+#subscribeButton {
+    padding: 10px 40px; /* Ajusta o preenchimento para aumentar o tamanho do botão */
+    font-size: 24px; /* Ajusta o tamanho da fonte */
+    background-color: #006400; /* Cor de fundo verde */
+    color: #fff; /* Cor do texto branca */
+    border: none; /* Remove a borda */
+    cursor: pointer; /* Mostra o cursor de ponteiro ao passar por cima */
+    transition: background-color 0.3s; /* Adiciona uma transição suave na mudança de cor de fundo */
+}
+
+#subscribeButton:hover {
+    background-color: #004d00; /* Cor de fundo verde mais escura ao passar por cima */
+}
+
+
+.full-width-image {
+            width: 100%;
+            height: auto;
+            display: block;
+            margin-top: 20px; /* Ajuste conforme necessário */
+        }
+        
+.full-width-button {
+    position: relative;
+    left: 1450px; /* Ajuste a distância para a direita conforme necessário */
+    top: -35px; /* Ajuste a distância para cima conforme necessário */
+    display: block;
+    width: 20%;
+    height: 50px; /* Ajuste conforme necessário */
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    line-height: 50px;
+    text-decoration: none;
+    margin-top: 10px; /* Ajuste conforme necessário */
+}
+
+/* Apply different styling for even and odd .about-us-content elements */
+.about-us-content.reverse-order {
+    flex-direction: row-reverse; /* Reverse the order for even elements */
+}
+
+.text-content {
+    flex: 1;
+    text-align: left;
+    max-width: 600px;
+    margin-left: 200px; /* Adjust margin-left as needed */
+}
+
+.text-content h2 {
+    font-size: 40px;
+    margin-bottom: 50px;
+}
+
+.text-content p {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.image-content {
+    flex: 1;
+    text-align: center;
+    max-width: 400px;
+    margin-right: 200px;
+}
+
+.image-content img {
+    max-width: 180%;
+    height: auto;
+}
+
+
+.section-processo-producao {
+        padding: 40px 20px;
+        background-color: #fff;
+        color: #000;
+        text-align: center;
+    }
+
+    .processo-producao {
+        display: flex;
+        justify-content: space-between;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .passos-esquerda,
+    .passos-direita {
+        flex: 1;
+    }
+
+    .passos-esquerda ol,
+    .passos-direita ol {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        font-size: 18px;
+    }
+
+    .passos-esquerda ol li,
+    .passos-direita ol li {
+        margin-bottom: 15px;
+    }
+
+    .passos-direita {
+        margin-left: 40px; /* Ajuste a margem conforme necessário para o espaçamento */
+    }
+
+
+/* ... Seu CSS existente ... */
+
+/* Estilos para a Seção "Sobre Nós" */
+.about-us-section {
+    padding: 40px 20px;
+    background-color: #fff;
+    color: #000;
+    text-align: center;
+}
+
+.about-us-section h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    margin-right: 100px;
+
+}
+
+.about-us-section p {
+    font-size: 22px;
+    margin-bottom: 30px;
+    margin-right: 100px;
+
+}
+footer {
+    font-size: 22px; /* Altere o valor conforme necessário */
+}
+
+footer h3 {
+    font-size: 30px; /* Altere o valor conforme necessário para os títulos no rodapé */
+}
+
+footer p {
+    font-size: 22px; /* Altere o valor conforme necessário para os parágrafos no rodapé */
+}

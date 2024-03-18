@@ -1,0 +1,265 @@
+@font-face {
+    font-family: 'MADE TOMMY Regular_PERSONAL USE';
+    src: url('Fontes/MADE TOMMY Regular_PERSONAL USE.otf') format('opentype');
+}
+    @font-face {
+    font-family: 'MADE TOMMY Bold_PERSONAL USE';
+    src: url('Fontes/MADE TOMMY Bold_PERSONAL USE.otf') format('opentype');
+    /* Adicione formatos de fonte adicionais conforme necessário (eot, woff, woff2, etc.) */
+}
+
+body, h1, h3, p, ul {
+    font-family: 'MADE TOMMY Regular_PERSONAL USE', sans-serif;
+}
+body, h2 {
+    font-family: 'MADE TOMMY Bold_PERSONAL USE', sans-serif;
+}
+
+body, h1, h2, h3, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Adiciona uma linha verde por baixo de todos os títulos */
+h1, h2, h3 {
+    display: inline-block; /* Para que a borda envolva apenas o comprimento do texto */
+    border-bottom: 2.5px solid #006400;
+    padding-bottom: 5px; /* Ajusta o espaçamento entre o texto e a linha */
+    margin-bottom: 10px; /* Espaçamento opcional entre títulos */
+}
+
+header {
+    position: relative;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 15px 0;
+}
+
+body {
+    padding-top: 80px;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.logo img {
+    width: 125px;
+    height: auto;
+}
+
+.divider {
+    width: 100%;
+    height: 2.5px;
+    background-color: #006400;
+    margin: 10px 0;
+}
+
+.nav-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.nav-links ul li {
+    margin-right: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.3s ease-in-out;
+    font-size: 20px;
+}
+
+.nav-links a:hover {
+    border-bottom: 2px solid #006400;
+}
+
+.header-background {
+    background-image: url('imagens/PRODUTOS/FundoProdutos.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    margin-top: 20px;
+}
+
+.button-container {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+}
+
+.rectangle-button {
+    display: block;
+    width: 200px;
+    height: 100px;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    line-height: 100px;
+    text-decoration: none;
+    margin-right: 10px; /* ajustado para um espaçamento menor */
+}
+
+.rectangle-button:hover {
+    background-color: #333;
+}
+.about-us-section {
+    padding: 40px 20px;
+    background-color: #fff;
+    color: #000;
+    text-align: center;
+}
+
+.about-us-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+#scrollToTopButton {
+            border: none;
+            background: none;
+            cursor: pointer;
+            font-family: 'MADE TOMMY Regular_PERSONAL USE', sans-serif; /* Adjust the font-family as needed */
+            font-size: 20px; /* Adjust the font size as needed */
+            color: #000; /* Adjust the text color as needed */
+        }
+		/* Center the title and button in the "A Nossa História" section */
+.about-us-section #sobre-nos-section {
+    text-align: center;
+}
+
+.about-us-section #sobre-nos-section h4 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    margin-left: 10px; /* Adjust margin-left as needed */
+}
+.about-us-section #sobre-nos-section button {
+    font-size: 22px;
+    padding: 10px 20px;
+    margin-top: 0px;
+    margin-left: 20px; /* Adjust margin-left as needed */
+}
+.full-width-image {
+            width: 100%;
+            height: auto;
+            display: block;
+            margin-top: 20px; /* Ajuste conforme necessário */
+        }
+        
+.full-width-button {
+    position: relative;
+    left: 1450px; /* Ajuste a distância para a direita conforme necessário */
+    top: -35px; /* Ajuste a distância para cima conforme necessário */
+    display: block;
+    width: 20%;
+    height: 50px; /* Ajuste conforme necessário */
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    line-height: 50px;
+    text-decoration: none;
+    margin-top: 10px; /* Ajuste conforme necessário */
+}
+
+.product-section {
+    text-align: center;
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-around; /* Adicionado para centralizar as categorias na horizontal */
+}
+
+.product-category {
+    width: 45%; /* Adicionado para definir a largura de cada categoria */
+}
+
+.product-container {
+    display: flex;
+    flex-wrap: wrap; /* Adicionado para que os produtos quebrem para a próxima linha se não houver espaço suficiente */
+    justify-content: space-around; /* Adicionado para centralizar os produtos na horizontal */
+}
+
+.product-category h2 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.product-item {
+    margin: 0 10px;
+}
+
+.product-item img {
+    width: 380px; /* Ajuste conforme necessário */
+    height: auto;
+}
+.product-item {
+    position: relative;
+    overflow: hidden;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay img {
+    width: 100%; /* Make the hover image take up the full width */
+    height: auto; /* Maintain the aspect ratio */
+    transition: transform 0.3s ease-in-out;
+}
+
+.product-item:hover .overlay img {
+    transform: scale(1.2); /* Adjust as needed */
+}
+#subscribeButton {
+    padding: 10px 40px; /* Ajusta o preenchimento para aumentar o tamanho do botão */
+    font-size: 24px; /* Ajusta o tamanho da fonte */
+    background-color: #006400; /* Cor de fundo verde */
+    color: #fff; /* Cor do texto branca */
+    border: none; /* Remove a borda */
+    cursor: pointer; /* Mostra o cursor de ponteiro ao passar por cima */
+    transition: background-color 0.3s; /* Adiciona uma transição suave na mudança de cor de fundo */
+}
+
+#subscribeButton:hover {
+    background-color: #004d00; /* Cor de fundo verde mais escura ao passar por cima */
+}
+footer {
+    font-size: 22px; /* Altere o valor conforme necessário */
+}
+
+footer h3 {
+    font-size: 30px; /* Altere o valor conforme necessário para os títulos no rodapé */
+}
+
+footer p {
+    font-size: 22px; /* Altere o valor conforme necessário para os parágrafos no rodapé */
+}
+

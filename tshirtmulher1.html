@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script src="scripts.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesSingle.css">
+    <title>Leafy Clothing</title>
+</head>
+<body>
+
+    <header>
+        <div class="sticky"> <!-- Adicionei a classe "sticky" aqui -->
+            <nav class="navbar">
+                <div class="logo">
+                    <img src="imagens/Logo.png" alt="Leafy Clothing">
+                </div>
+                <div class="divider"></div>
+                <div class="nav-links">
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="produtos.html">PRODUTOS</a></li>
+                        <li><a href="sobrenos.html">SOBRE NÓS</a></li>
+                        <li><a href="#contactos">CONTACTOS</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+		
+        
+		<div id="product-gallery">
+    <img src="imagens/PRODUTOS/tshirtmulher1.jpg" id="main-image" alt="Imagem Principal">
+</div>
+
+<div id="thumbnail-container">
+    <img src="imagens/PRODUTOS/tshirtmulherrolante1.jpg" class="thumbnail" alt="Miniatura 1">
+    <img src="imagens/PRODUTOS/1detalhestshirtmulher1.jpg" class="thumbnail" alt="Miniatura 2">
+    <img src="imagens/PRODUTOS/2detalhestshirtmulher1.jpg" class="thumbnail" alt="Miniatura 3">
+    <!-- Adiciona mais miniaturas conforme necessário -->
+</div>
+
+
+<!-- Inside the body tag, after the product details -->
+<div id="product-details">
+    <h2>T-Shirt Branca</h2>
+    <p class="product-description">"I DON´T CARE" em cânhamo e bambu. Estilo consciente, atitude descontraída.</p>
+    <p class="product-description">59.99€</p>
+   <!-- Add a select dropdown for choosing the size -->
+<label for="size">Escolha o Tamanho:</label>
+<select id="size" name="size">
+    <option value="small">Small</option>
+    <option value="medium">Medium</option>
+    <option value="large">Large</option>
+</select>
+    <br>
+<label for="quantity">Escolha a Quantidade:</label>
+    <div class="quantity-selector">
+        <button id="decrement">-</button>
+        <span id="quantity">1</span>
+        <button id="increment">+</button>
+    </div>
+<br>
+<div class="button-container">
+    <button class="buy-button">Compra já</button>
+    <button class="add-to-cart-button">Adicionar ao carrinho</button>
+</div>
+
+</div>
+
+
+
+		
+		
+	 <footer id="contactos-section" style="background-color: #000; color: #fff; padding: 40px 20px; text-align: center;">
+        <div style="display: flex; justify-content: space-between; max-width: 1200px; margin: 0 auto;">
+            <!-- Left Section - Email and Phone Input Boxes -->
+            <div style="flex: 1;">
+                <h3>Leafy Giveaway</h3>
+                <br>
+                <br>
+                <form>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Your email">
+                    <br>
+                    <br>
+                    <label for="phone">Telemóvel:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Your phone number">
+                    <br>
+                    <br>
+                    <!-- Checkbox for Marketing Messages -->
+                    <div style="margin-top: 10px;">
+                        <input type="checkbox" id="marketingCheckbox">
+                        <label for="marketingCheckbox">Desejo participar no Giveaway da Leafy para ter a opotunidade de ganhar uma peça grátis.</label>
+                    </div>
+                </form>
+
+                <!-- Confirmation Text (Initially Hidden) -->
+                <div id="confirmationText" style="display: none; margin-top: 10px; color: #006400; font-size: 12px">
+                    Estás inscrito no Giveaway! boa sorte ;)
+                </div>
+                <button id="subscribeButton" style="margin-top: 20px; padding: 15px 30px; font-size: 20px;">Subscrever</button>
+            </div>
+
+            <!-- Right Section - Contact Information and Social Media Links -->
+            <div style="flex: 1;">
+                <h3>CONTACTOS</h3>
+                <br>
+                <br>
+                <p>Avenida Edmundo Lima Bastos</p>
+                <p>2790-488, Lisboa</p>
+                <br>
+                <p>Email: Leafy@gmail.com</p>
+                <br>
+                <p>Phone: +351 960 309 790</p>
+                <br>
+                <br>
+                <!-- Social Media Links -->
+                <div style="margin-top: 20px;">
+                    <a href="https://www.facebook.com/profile.php?id=61557662303116" style="text-decoration: none; color: #fff; margin-right: 10px;"><img src="imagens/facebook.png" alt="Facebook" style="height: 20px; width: 20px; vertical-align: middle;"> Facebook</a>
+                    <a href="https://twitter.com/LeafyHemp" style="text-decoration: none; color: #fff; margin-right: 10px;"><img src="imagens/twitter.png" alt="Twitter" style="height: 20px; width: 20px; vertical-align: middle;"> X</a>
+                    <a href="https://instagram.com/leafy.hemp/" style="text-decoration: none; color: #fff;"><img src="imagens/instagram.png" alt="Instagram" style="height: 20px; width: 20px; vertical-align: middle;"> Instagram</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script src="scripts.js"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,262 @@
+@font-face {
+    font-family: 'MADE TOMMY Regular_PERSONAL USE';
+    src: url('Fontes/MADE TOMMY Regular_PERSONAL USE.otf') format('opentype');
+}
+    @font-face {
+    font-family: 'MADE TOMMY Bold_PERSONAL USE';
+    src: url('Fontes/MADE TOMMY Bold_PERSONAL USE.otf') format('opentype');
+    /* Adicione formatos de fonte adicionais conforme necessário (eot, woff, woff2, etc.) */
+}
+
+body, h1, h3, p, ul {
+    font-family: 'MADE TOMMY Regular_PERSONAL USE', sans-serif;
+}
+body, h2 {
+    font-family: 'MADE TOMMY Bold_PERSONAL USE', sans-serif;
+}
+
+body, h1, h2, h3, p, ul {
+    margin: 0;
+    padding: 0;
+}
+/* Adiciona uma linha verde por baixo de todos os títulos */
+h1, h2, h3 {
+    display: inline-block; /* Para que a borda envolva apenas o comprimento do texto */
+    border-bottom: 2.5px solid #006400;
+    padding-bottom: 5px; /* Ajusta o espaçamento entre o texto e a linha */
+    margin-bottom: 10px; /* Espaçamento opcional entre títulos */
+}
+
+header {
+    position: relative;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 15px 0;
+}
+
+body {
+    padding-top: 80px;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.logo img {
+    width: 125px;
+    height: auto;
+}
+
+.divider {
+    width: 100%;
+    height: 2.5px;
+    background-color: #006400;
+    margin: 10px 0;
+}
+
+.nav-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.nav-links ul li {
+    margin-right: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.3s ease-in-out;
+    font-size: 20px;
+}
+
+.nav-links a:hover {
+    border-bottom: 2px solid #006400;
+}
+
+#product-gallery {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#thumbnail-container {
+    position: absolute;
+    left: 27%; /* Adjust the left positioning as needed */
+    top: 36.7%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.thumbnail {
+    width: 160px;
+    height: auto;
+    margin: 5px 0; /* Adiciona margem superior e inferior */
+    cursor: pointer;
+}
+
+#main-image {
+    max-width: 27%; /* ou outro valor desejado */
+    height: auto;
+    transition: max-width 0.3s ease-out;
+	margin-top: 150px;
+	margin-bottom: 150px;
+}
+
+/* Add this to your existing CSS or update as needed */
+
+#product-gallery {
+    display: flex;
+    position: relative;
+}
+
+#product-details {
+    position: absolute;
+    top: 27%;
+    right: 300px; /* Adjust the value to move more to the left */
+    transform: translateY(-50%);
+    max-width: 300px;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#product-details h2 {
+    font-size: 40px;
+    margin-bottom: 10px;
+    color: #006400;
+}
+
+.product-description {
+    font-size: 26px;
+    margin-bottom: 15px;
+}
+
+.buy-button {
+    background-color: #006400;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 28px;
+    border: none;
+    cursor: pointer;
+}
+
+.add-to-cart-button {
+    background-color: #000; /* Black background */
+    color: #fff; /* White text color */
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px; /* Adjust the margin as needed */
+}
+
+.add-to-cart-button:hover {
+    background-color: #333; /* Darker shade on hover if desired */
+}
+/* Add this to your existing CSS or update as needed */
+
+.button-container {
+    margin-top: 20px; /* Adjust the margin as needed */
+}
+
+    /* Increase font size for the "Choose Size" label and the size options */
+    label[for="size"],
+    #size {
+        font-size: 20px;
+    }
+
+    /* Increase padding for better spacing */
+    padding: 20px;
+	
+	/* Add this to your existing CSS or update as needed */
+
+/* Style for the "Choose Size" label and the size options */
+label[for="size"],
+#size {
+    font-size: 20px;
+    color: #006400; /* Green color */
+}
+
+/* Style for the dropdown arrow */
+#size {
+    background-color: #fff; /* Background color */
+    border: 2px solid #006400; /* Border color */
+    color: #006400; /* Text color */
+    padding: 10px; /* Adjust padding as needed */
+    border-radius: 5px; /* Add rounded corners */
+    cursor: pointer;
+}
+
+/* Adjust the hover effect for better user feedback */
+#size:hover {
+    background-color: #006400;
+    color: #fff;
+}
+
+/* Adjust the appearance of the dropdown options */
+#size option {
+    background-color: #fff; /* Background color of options */
+    color: #006400; /* Text color of options */
+}
+
+
+.buy-button,
+.add-to-cart-button {
+    margin-right: 10px; /* Add space between the buttons */
+}
+
+.button-container {
+    margin-top: 20px; /* Ou outro valor adequado */
+    transition: margin-top 0.3s ease-out; /* Adiciona uma transição suave */
+}
+
+.button-container.dropdown-open {
+    margin-top: 100px; /* Ajuste conforme necessário quando o dropdown está aberto */
+}
+#subscribeButton {
+    padding: 10px 40px; /* Ajusta o preenchimento para aumentar o tamanho do botão */
+    font-size: 24px; /* Ajusta o tamanho da fonte */
+    background-color: #006400; /* Cor de fundo verde */
+    color: #fff; /* Cor do texto branca */
+    border: none; /* Remove a borda */
+    cursor: pointer; /* Mostra o cursor de ponteiro ao passar por cima */
+    transition: background-color 0.3s; /* Adiciona uma transição suave na mudança de cor de fundo */
+}
+
+#subscribeButton:hover {
+    background-color: #004d00; /* Cor de fundo verde mais escura ao passar por cima */
+}
+
+footer {
+    font-size: 22px; /* Altere o valor conforme necessário */
+}
+
+footer h3 {
+    font-size: 30px; /* Altere o valor conforme necessário para os títulos no rodapé */
+}
+
+footer p {
+    font-size: 22px; /* Altere o valor conforme necessário para os parágrafos no rodapé */
+}
+

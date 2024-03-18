@@ -1,0 +1,333 @@
+@font-face {
+    font-family: 'MADE TOMMY Regular_PERSONAL USE';
+    src: url('Fontes/MADE TOMMY Regular_PERSONAL USE.otf') format('opentype');
+}
+	@font-face {
+	font-family: 'MADE TOMMY Bold_PERSONAL USE';
+    src: url('Fontes/MADE TOMMY Bold_PERSONAL USE.otf') format('opentype');
+    /* Adicione formatos de fonte adicionais conforme necessário (eot, woff, woff2, etc.) */
+}
+
+body, h1, h3, p, ul {
+    font-family: 'MADE TOMMY Regular_PERSONAL USE', sans-serif;
+}
+body, h2 {
+    font-family: 'MADE TOMMY Bold_PERSONAL USE', sans-serif;
+}
+
+body, h1, h2, h3, p, ul {
+    margin: 0;
+    padding: 0;
+}
+/* Adiciona uma linha verde por baixo de todos os títulos */
+h1, h2, h3 {
+    display: inline-block; /* Para que a borda envolva apenas o comprimento do texto */
+    border-bottom: 2.5px solid #006400;
+    padding-bottom: 5px; /* Ajusta o espaçamento entre o texto e a linha */
+    margin-bottom: 10px; /* Espaçamento opcional entre títulos */
+}
+
+header {
+    position: relative;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 15px 0;
+}
+
+body {
+    padding-top: 80px;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.logo img {
+    width: 125px;
+    height: auto;
+}
+
+.divider {
+    width: 100%;
+    height: 2.5px;
+    background-color: #006400;
+    margin: 10px 0;
+}
+
+.nav-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.nav-links ul li {
+    margin-right: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.3s ease-in-out;
+    font-size: 20px;
+}
+
+.nav-links a:hover {
+    border-bottom: 2px solid #006400;
+}
+
+
+.header-background {
+    background-image: url('imagens/HOME/FundoHome.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    margin-top: 20px;
+}
+
+.button-container {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+}
+
+.rectangle-button {
+    display: block;
+    width: 200px;
+    height: 100px;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    line-height: 100px;
+    text-decoration: none;
+    margin-right: 10px; /* ajustado para um espaçamento menor */
+}
+
+.rectangle-button:hover {
+    background-color: #333;
+}
+
+.hemp-section {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #fff;
+    color: #000;
+}
+
+.hemp-section h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.hemp-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.hemp-image {
+    width: 10%; /* Adjust the width based on your design */
+    text-align: center;
+    margin-bottom: 30px; /* Adjust the margin as needed */
+}
+
+.hemp-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.hemp-image h3 {
+    font-size: 25px;
+    margin-top: 10px;
+}
+
+.hemp-image p {
+    font-size: 22px;
+    margin: 0; /* Reset margin to align with title */
+    padding: 0 1px; /* Add padding for better alignment */
+    width: 150%;
+	margin-left: -22%
+}
+
+
+.fun-fact-section {
+    background-color: #006400; /* Green background color */
+    color: #fff; /* Text color */
+    text-align: center;
+    padding: 40px 20px;
+}
+.fun-fact-text {
+    font-size: 22px; /* Altere o valor conforme necessário */
+}
+
+
+.green-rectangle {
+    display: inline-block;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional box shadow for a subtle effect */
+}
+
+.green-rectangle {
+    font-size: 18px;
+    margin: 0;
+}
+.video-container {
+    position: relative;
+}
+
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+
+.play-button img {
+    width: 100px; /* Ajuste o tamanho do ícone conforme necessário */
+}
+.custom-controls {
+    display: flex;
+    justify-content: center; /* Alterado para centralizar horizontalmente */
+    align-items: center; /* Adicionado para centralizar verticalmente */
+    margin-top: 10px;
+}
+
+#playPauseBtn,
+#muteBtn {
+    font-size: 20px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    margin: 0 10px; /* Ajustado o espaçamento entre os botões e a linha de tempo */
+}
+
+#seekBar {
+    width: 25%;
+    margin: 0 10px;
+    background-color: #ccc;
+    position: relative;
+}
+
+#seekBar::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 0;
+    background-color: #006400; /* Cor verde desejada */
+}
+
+
+
+.featured-products {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #fff;
+    color: #000;
+}
+
+.featured-products h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.product-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.product {
+    width: 25%;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+    max-width: 100%; /* adicionado para melhor responsividade */
+    border-radius: 8px;
+}
+
+.product h3 {
+    font-size: 30px;
+    margin: 10px 0;
+}
+
+.product p {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.product-link {
+    position: relative;
+    overflow: hidden;
+}
+
+.product-link a {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
+.product-link img:hover {
+    transform: none !important; /* Removendo a transformação de escala */
+}
+
+.product-link .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.product-link:hover .overlay {
+    opacity: 1;
+}
+#subscribeButton {
+    padding: 10px 40px; /* Ajusta o preenchimento para aumentar o tamanho do botão */
+    font-size: 24px; /* Ajusta o tamanho da fonte */
+    background-color: #006400; /* Cor de fundo verde */
+    color: #fff; /* Cor do texto branca */
+    border: none; /* Remove a borda */
+    cursor: pointer; /* Mostra o cursor de ponteiro ao passar por cima */
+    transition: background-color 0.3s; /* Adiciona uma transição suave na mudança de cor de fundo */
+}
+
+#subscribeButton:hover {
+    background-color: #004d00; /* Cor de fundo verde mais escura ao passar por cima */
+}
+footer {
+    font-size: 22px; /* Altere o valor conforme necessário */
+}
+
+footer h3 {
+    font-size: 30px; /* Altere o valor conforme necessário para os títulos no rodapé */
+}
+
+footer p {
+    font-size: 22px; /* Altere o valor conforme necessário para os parágrafos no rodapé */
+}
