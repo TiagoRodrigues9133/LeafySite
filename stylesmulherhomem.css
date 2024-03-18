@@ -135,13 +135,17 @@ body {
     flex-wrap: wrap;
 }
 #scrollToTopButton {
-            border: none;
-            background: none;
-            cursor: pointer;
-            font-family: 'MADE TOMMY Regular_PERSONAL USE', sans-serif; /* Adjust the font-family as needed */
-            font-size: 20px; /* Adjust the font size as needed */
-            color: #000; /* Adjust the text color as needed */
-        }
+    background-color: #006400; /* Define a cor de fundo como verde */
+    color: #fff; /* Define a cor do texto como branco */
+    border-radius: 10px; /* Adiciona bordas arredondadas */
+    padding: 10px 20px; /* Adiciona preenchimento interno para espaçamento */
+    border: none; /* Remove a borda */
+    cursor: pointer; /* Altera o cursor ao passar o mouse */
+}
+
+#scrollToTopButton:hover {
+    background-color: #003300; /* Altera a cor de fundo quando o mouse passa por cima */
+}
 		/* Center the title and button in the "A Nossa História" section */
 .about-us-section #sobre-nos-section {
     text-align: center;
